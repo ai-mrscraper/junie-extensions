@@ -64,7 +64,7 @@ setup is complete.
 | --- | --- |
 | Acquire and preserve raw content from known public URLs for any downstream task | [mrscraper-fetch](../mrscraper-fetch/SKILL.md), preferably first |
 | Add managed extraction, repeated records, site mapping, schema guidance, or a reusable scraper | [mrscraper-scrape](../mrscraper-scrape/SKILL.md), normally after or alongside fetch |
-| Discover relevant pages from a Google query | [mrscraper-serp](../mrscraper-serp/SKILL.md), then fetch selected pages |
+| Discover relevant pages from a web search query | [mrscraper-serp](../mrscraper-serp/SKILL.md), then fetch selected pages |
 | Reproduce a prior scrape or run an existing AI/manual scraper on new URLs | rerun |
 | List or retrieve stored results | results or result |
 | Check account usage or domain request outcomes | status |

@@ -176,7 +176,7 @@
     {
       "name": "mrscraper",
       "source": "./extensions/mrscraper",
-      "description": "Web scraping, structured data extraction, and Google search for AI assistants.",
+      "description": "Web scraping, structured data extraction, and web search for AI assistants.",
       "version": "0.1.4",
       "author": {
         "name": "MrScraper"
@@ -188,7 +188,7 @@
         "web-scraping",
         "data-extraction",
         "scraping",
-        "google-search",
+        "web-search",
         "serp",
         "mcp",
         "research"

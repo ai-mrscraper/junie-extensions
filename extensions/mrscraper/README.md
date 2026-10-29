@@ -1,9 +1,9 @@
 # mrscraper
 
-Web scraping, structured data extraction, and Google search for AI assistants.
+Web scraping, structured data extraction, and web search for AI assistants.
 
 Connect your agent to MrScraper for raw page fetching, managed structured
-extraction, Google discovery, and reusable saved scraper workflows. The
+extraction, web search, and reusable saved scraper workflows. The
 included skills preserve source responses with a fetch-first workflow before
 adding backend extraction when it is explicitly requested or clearly useful.
 

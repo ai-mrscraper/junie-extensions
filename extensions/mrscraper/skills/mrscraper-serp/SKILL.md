@@ -1,7 +1,7 @@
 ---
 name: mrscraper-serp
 description: |
-  Discover public pages through Google with MrScraper using a search query or Google search URL. Use when no target URL is known or the user asks to inspect Google results. After discovery, preserve selected pages with mrscraper-fetch before adding managed extraction through mrscraper-scrape.
+  Discover public pages through web search with MrScraper using a search query or a search results URL. Use when no target URL is known or the user asks to inspect web search results. After discovery, preserve selected pages with mrscraper-fetch before adding managed extraction through mrscraper-scrape.
 ---
 
 # Discover Pages with MrScraper MCP SERP
@@ -19,13 +19,13 @@ Include the important entity, attribute, location, or date in query_or_url:
       "query_or_url": "web scraping best practices"
     }
 
-The input can also be a complete Google search URL:
+The input can also be a complete search results URL:
 
     {
       "query_or_url": "https://www.google.com/search?q=web+scraping&gl=us&hl=en&start=20"
     }
 
-For a Google URL, the tool reads q, gl, hl, and start. Explicit region,
+For a search results URL, the tool reads q, gl, hl, and start. Explicit region,
 language, and page inputs take precedence.
 
 ## Step 2 — Set Locale and Pagination
@@ -70,9 +70,9 @@ Use JavaScript rendering for dynamic result features such as AI Overview:
 
 | MCP input | Default | Request mapping | Use |
 | --- | --- | --- | --- |
-| query_or_url | required | Body query | Search query or complete Google search URL. |
-| region | URL value or omitted | Body region | Google result country, such as us or id. |
-| language | URL value or omitted | Body language | Google result language, such as en or id. |
+| query_or_url | required | Body query | Search query or complete search results URL. |
+| region | URL value or omitted | Body region | Result country, such as us or id. |
+| language | URL value or omitted | Body language | Result language, such as en or id. |
 | page | URL value or omitted | Body page | Positive, one-based results page. |
 | format | json | Body format | Return parsed JSON or result-page HTML. |
 | render_js | false | Body renderJs | Wait for JavaScript-rendered result features. |
@@ -118,6 +118,6 @@ coverage.
 - Use [mrscraper](../mrscraper/SKILL.md) when the connection or authentication
   fails.
 
-SERP is for public Google discovery. Use the map agent in
+SERP is for public web search. Use the map agent in
 [mrscraper-scrape](../mrscraper-scrape/SKILL.md) to discover URLs within one
 known site.
